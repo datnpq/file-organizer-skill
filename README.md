@@ -17,7 +17,7 @@
 
 ## 🛠️ Cài đặt
 
-1.  Tải file `file-organizer-skill.skill` từ [Releases](https://github.com/your-repo/file-organizer-skill/releases).
+1.  Tải file `file-organizer-skill.skill` từ [Releases](https://github.com/datnpq/file-organizer-skill/releases).
 2.  Import vào OpenClaw của bạn:
     ```bash
     openclaw skills add path/to/file-organizer-skill.skill
