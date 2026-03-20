@@ -1,59 +1,46 @@
-# 🦞 File Organizer Skill for OpenClaw
+# 🦞 file-organizer-skill
+> **Dọn dẹp folder như một Pro.** Không còn nỗi lo "đống rác" Downloads hay Desktop.
 
-> Biến mớ hỗn độn file/folder thành hệ thống khoa học, chuyên nghiệp chỉ với một câu lệnh.
+[![OpenClaw](https://img.shields.io/badge/Orchestrated%20by-OpenClaw-orange.svg?style=flat-square)](https://openclaw.ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-blue?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-
-`file-organizer-skill` là một công cụ mạnh mẽ dành cho OpenClaw, giúp tự động hóa việc sắp xếp, phân loại và chuẩn hóa cấu trúc thư mục (Dự án, Doanh nghiệp, Cá nhân) một cách thông minh và **an toàn tuyệt đối**.
-
-## ✨ Tính năng nổi bật
-
--   **🔍 Phân tích & Phân loại:** Tự động quét và đề xuất cấu trúc folder tối ưu dựa trên nội dung thực tế.
--   **🛡️ An toàn dữ liệu (Zero Data Loss):** Cơ chế xác minh đếm file (Pre/Post check) đảm bảo không có bất kỳ file nào bị mất trong quá trình dọn dẹp.
--   **📝 Chuẩn hóa tên file (Naming Convention):** Tự động chuyển đổi tên file sang `snake_case`, lowercase và xóa dấu tiếng Việt (VD: `Báo cáo 2024.pdf` -> `bao_cao_2024.pdf`).
--   **📑 Tự động lập mục lục (Indexing):** Sinh file `INDEX.md` ngay tại root folder để tra cứu nhanh cấu trúc mới.
--   **🔄 Dọn dẹp định kỳ (Periodic Cleanup):** Hỗ trợ workflow dọn dẹp Desktop, Downloads hàng tuần để máy luôn sạch sẽ.
-
-## 🛠️ Cài đặt
-
-1.  Tải file `file-organizer-skill.skill` từ [Releases](https://github.com/datnpq/file-organizer-skill/releases).
-2.  Import vào OpenClaw của bạn:
-    ```bash
-    openclaw skills add path/to/file-organizer-skill.skill
-    ```
-
-## 🚀 Cách sử dụng
-
-Chỉ cần ra lệnh cho OpenClaw:
-
--   *"Dọn dẹp giúp anh folder Downloads theo chuẩn cá nhân."*
--   *"Tổ chức lại dự án này thành cấu trúc Tech Project chuẩn."*
--   *"Quét và đổi tên toàn bộ file trong thư mục này sang snake_case không dấu."*
-
-## 📁 Cấu trúc thư mục đề xuất
-
-Skill này đi kèm với các mẫu cấu trúc chuẩn (References):
--   **01_Active_Projects**: Dành cho dự án đang triển khai.
--   **02_Archive_Projects**: Lưu trữ dự án đã hoàn thành.
--   **00_BOD / 01_HR / 02_Finance**: Cấu trúc chuyên nghiệp cho doanh nghiệp.
-
-## 📝 Quy chuẩn đặt tên (Naming Rules)
-
-Skill áp dụng quy tắc:
-1.  **Chữ thường (lowercase)**
-2.  **Không dấu tiếng Việt**
-3.  **Dấu gạch dưới (`_`) thay cho khoảng trắng**
-4.  **Đánh số thứ tự cho các folder chính** (VD: `01_Work`, `02_Learning`)
-
-## ⚠️ Lưu ý an toàn
-
--   Layla sẽ **LUÔN** lập kế hoạch và hỏi xác nhận từ bạn trước khi thực hiện bất kỳ thay đổi nào.
--   Skill **KHÔNG BAO GIỜ XÓA FILE** - chỉ di chuyển hoặc đổi tên.
-
-## 🤝 Đóng góp
-
-Mọi đóng góp (Issue/PR) đều được hoan nghênh để hoàn thiện hệ thống quản lý file cho cộng đồng OpenClaw Việt Nam.
+Hệ thống quản lý file thông minh dành cho **Anh Em Coder & Startup**. Được thiết kế để giữ máy tính luôn ở trạng thái "Clean & Organized" mà không tốn một giây suy nghĩ.
 
 ---
-*Phát triển bởi Anh Ba & Layla @ OpenClaw*
+
+## 🧐 Tại sao bạn cần cái này?
+Bạn có bao giờ nhìn vào folder **Downloads** hay **Desktop** và muốn... xóa luôn cái máy không? 
+`file-organizer-skill` giúp bạn:
+- **Ngưng đặt tên linh tinh:** Tự động rename sang `snake_case` chuẩn chỉ.
+- **Quên đi việc phân loại:** Layla sẽ tự hiểu file nào là tài liệu, file nào là installer, file nào là rác.
+- **An toàn tuyệt đối:** Có cơ chế **Pre-Check Count** - Đảm bảo trước khi dọn có 100 file thì sau khi dọn vẫn đủ 100 file.
+
+## 🚀 "Show me the Magic"
+Chỉ cần gọi Layla:
+> *"Layla, dọn dẹp folder Downloads giúp anh."*
+
+**Layla sẽ làm gì?**
+1.  **Scan:** Đếm số lượng file hiện tại.
+2.  **Plan:** Đề xuất cấu trúc folder (01_Docs, 02_Media, 03_Installers...).
+3.  **Rename:** Chuyển `Báo cáo dự án.pdf` -> `bao_cao_du_an.pdf`.
+4.  **Move:** Gom file vào đúng chỗ.
+5.  **Verify:** Đếm lại lần nữa. Nếu khớp mới báo cáo hoàn thành!
+
+## 🛠️ Cài đặt cực nhanh
+1.  Tải file `.skill` từ [Releases](https://github.com/datnpq/file-organizer-skill/releases).
+2.  Import vào OpenClaw:
+    ```bash
+    openclaw skills add file-organizer-skill.skill
+    ```
+
+## 🏗️ Cấu trúc "Chuẩn Anh Ba" đề xuất
+Skill này áp dụng các bộ framework cấu trúc thực tế:
+- **Dự án Tech:** `01_Strategy`, `02_Design`, `03_Development`, `04_Docs`...
+- **Cá nhân:** `01_Work`, `02_Learning`, `03_Finance`, `04_Personal`...
+
+## 🤝 Contribution
+Anh em thấy chỗ nào chưa "ngầu" hoặc muốn thêm script dọn dẹp cho các loại file đặc thù (như 3D models, AI datasets), cứ thoải mái mở PR nhé!
+
+---
+*Created with ❤️ by **Anh Ba** & **Layla** (OpenClaw Core AI).*
